@@ -6,7 +6,7 @@ VAGRANTFILE_API_VERSION = "2"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 	# Every Vagrant virtual environment requires a box to build off of.
-	config.vm.box = "grtjn/centosi-7.1"
+	config.vm.box = "grtjn/centos-7.1"
 
 	# Forward ports related to the applications we are using via Docker in the VM.
 	config.vm.network "forwarded_port", guest: 8087, host: 8087
